@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <form action="{% url 'password' %}">
+
+        <select name="length">
+
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+
+        </select>
+        <br>
+
+        <input type="checkbox" name="UpperCase">Upper Case</input>
+        <br>
+        <input type="checkbox" name="SpecialChar">Special Characters</input>
+
+        <br>
+
+        <input type='submit' value="Generate Password" />
+
+
+    </form>
+    <a href="{% url 'about' %}">About</a>
+    <script src="" async defer></script>
+</body>
+
+</html>
